@@ -4,14 +4,20 @@ import logging
 import argparse
 import clamsig
 
-if __name__ == "__main__":
+def get_args():
 
-    # Let's grab my runtime options
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-v", "--verbose", action="append_const", help="Verbosity Controls",
                         const=1, default=[])
     parser.add_argument("term", help="Name of Signature to Visualize")
+
+    return parser
+
+if __name__ == "__main__":
+
+    # Let's grab my runtime options
+    parser = get_args()
 
     args = parser.parse_args()
 
