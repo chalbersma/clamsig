@@ -144,7 +144,6 @@ class ClamSigVis:
             signature_decode = None
         else:
             # Let's Parse the Results
-
             signature_decode = decode_sig_result.stdout.decode("utf-8")
 
             self.logger.debug("Signature Decoded Text:\n{}".format(signature_decode))

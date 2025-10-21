@@ -1,0 +1,22 @@
+[project]
+name = "clamsig"
+version = "2025.10.20-0"
+authors = [
+    {name= "Chris Halbersma", email= "chris@halbersma.us" }
+]
+description = "Intended to be a Tool to Help Visualize and Breakdown ClamAV Signatures"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+
+[tool.setuptools]
+packages = ["clamsig"]
+
+[project.scripts]
+"csigv.py" = "csigv:main"
